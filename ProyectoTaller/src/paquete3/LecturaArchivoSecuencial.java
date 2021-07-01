@@ -81,10 +81,10 @@ public class LecturaArchivoSecuencial {
     @Override
     public String toString() {
         
-        String cadena = "Lista de Pasajes\n";
+        String cadena = "\t<< LISTA DE PASAJES >>\n\t======================\n\n";
         for (int i = 0; i < obtenerListaPasajes().size(); i++) {
             PasajeInterCantonal p = obtenerListaPasajes().get(i);
-            cadena = String.format("%s%d) (%s) - %s\n", cadena, 
+            cadena = String.format("%s%d) (%s)  \n%s\n", cadena, 
                     i+1, p.getClass().getSimpleName(), p);
         }
 
